@@ -9,8 +9,11 @@ export function Projects() {
 			<h2>{t('projectsTitle')}</h2>
 			<div class="projects-container">
 				<Project />
-				{/* <Project /> */}
-				{/* <Project /> */}
+				<Project />
+				<Project />
+				<Project />
+				<Project />
+				<Project />
 			</div>
 		</div>
 	)
