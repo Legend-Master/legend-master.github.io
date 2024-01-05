@@ -4,6 +4,8 @@ import { createEffect, createSignal } from 'solid-js'
 import { enDict } from '../locales/en/dict'
 import { zhDict } from '../locales/zh/dict'
 
+import './language-select.css'
+
 // const languages = ['en', 'zh'] as const
 export type LanguageCodes = 'en' | 'zh'
 export const [languageCode, setLanguageCode] = makePersisted(
@@ -29,6 +31,7 @@ export function LanguageSelect() {
 	return (
 		<div>
 			<select
+				class="language-select"
 				onChange={(event) => {
 					setLanguageCode(languages[event.target.selectedIndex]!.code)
 				}}

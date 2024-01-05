@@ -15,7 +15,7 @@
 
 	overflow: hidden;
 
-	background-color: white;
+	background-color: var(--surface-container-color);
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 
 	transition: box-shadow 0.2s, translate var(--animation-duration), width var(--animation-duration),
@@ -66,6 +66,8 @@
 
 	width: var(--card-width);
 	height: var(--card-height);
+
+    color: var(--on-surface-color);
 
 	padding: 2em;
 }

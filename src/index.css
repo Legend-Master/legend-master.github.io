@@ -3,7 +3,25 @@
 		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 
-    --card-top-z-index: 100;
+	--primary-color: #31628d;
+	--on-primary-color: #ffffff;
+	--secondary-color: #526070;
+	--on-secondary-color: #ffffff;
+	--surface-color: #f7f9ff;
+	--on-surface-color: #181c20;
+	--surface-container-color: #eceef4;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: #9dcbfb;
+		--on-primary-color: #003355;
+		--secondary-color: #b9c8da;
+		--on-secondary-color: #243240;
+		--surface-color: #36393e;
+		--on-surface-color: #e0e2e8;
+		--surface-container-color: #1d2024;
+	}
 }
 
 *,
@@ -27,21 +45,26 @@ select {
 	display: none !important;
 }
 
-header {
-    display: grid;
-    justify-content: end;
-    align-items: center;
+body {
+	background-color: var(--surface-color);
+}
 
-    height: 4em;
-    background-color: aliceblue;
-    padding: 0 5em;
+header {
+	display: grid;
+	justify-content: end;
+	align-items: center;
+
+	height: 4em;
+	background-color: var(--surface-container-color);
+	padding: 0 5em;
 }
 
 main {
-    display: grid;
-    justify-content: center;
+	display: grid;
+	justify-content: center;
 }
 
 .i-m-tony {
-    text-align: center;
+	color: var(--on-surface-color);
+	text-align: center;
 }

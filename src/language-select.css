@@ -1,0 +1,11 @@
+.language-select {
+    background-color: transparent;
+    border: none;
+    min-width: 0;
+    cursor: pointer;
+
+    padding: 0.5em;
+
+    color: var(--on-primary-color);
+    background-color: var(--primary-color);
+}
