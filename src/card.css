@@ -18,14 +18,22 @@
 	background-color: white;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 
-	transition: box-shadow var(--animation-duration), translate var(--animation-duration),
-		width var(--animation-duration), height var(--animation-duration);
+	transition: box-shadow 0.2s, translate var(--animation-duration), width var(--animation-duration),
+		height var(--animation-duration);
 }
 
 @media (prefers-reduced-motion: reduce) {
 	.card .container-decor {
 		transition: none;
 	}
+}
+
+.card:not(.open):focus-visible {
+	outline: none;
+}
+
+.card:not(.open):focus-visible .container-decor {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (hover: hover) {
@@ -46,6 +54,12 @@
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
+@supports (height: 100dvh) {
+	.card.open .container-decor {
+		--container-height: 90dvh;
+	}
+}
+
 .card .container {
 	display: grid;
 	gap: 1em;
@@ -57,12 +71,20 @@
 }
 
 .card.open .container {
+	gap: 2em;
+
 	padding: 4em;
 	width: var(--container-width);
 	height: var(--container-height);
 	overflow: auto;
 
 	/* mask-image: linear-gradient(black calc(100% - 3rem), transparent); */
+}
+
+@media (width < 500px) {
+	.card.open .container {
+		padding: 2em;
+	}
 }
 
 .card .overlay {
@@ -88,6 +110,10 @@
 
 .card .title {
 	font-size: 1.2em;
+}
+
+.card.open .title {
+	font-size: 1.4em;
 }
 
 .card:not(.open) .description {
