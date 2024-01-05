@@ -1,0 +1,9 @@
+.projects .projects-container {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	gap: 1em;
+}
+
+/* .project {
+
+} */

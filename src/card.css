@@ -1,0 +1,43 @@
+.card {
+	display: grid;
+	/* width: 300px; */
+	/* height: 200px; */
+	padding: 2em;
+	gap: 1em;
+	background-color: white;
+	/* transition: 0.3s; */
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.card.open {
+	position: fixed;
+	inset: 0;
+	margin: auto;
+	padding: 3em;
+	width: min(90vw, 600px);
+	max-height: 80vh;
+	overflow: auto;
+
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	/* mask-image: linear-gradient(black calc(100% - 3rem), transparent); */
+}
+
+.overlay {
+	position: fixed;
+	inset: 0;
+	opacity: 0;
+	background-color: black;
+	pointer-events: none;
+
+	transition: 0.3s;
+}
+
+.overlay.open {
+	opacity: 0.2;
+	pointer-events: unset;
+	/* transition: 0.3s; */
+}
+
+.card .title {
+    font-size: 1.2em;
+}

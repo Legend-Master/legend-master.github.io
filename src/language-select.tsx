@@ -6,7 +6,9 @@ import { zhDict } from '../locales/zh/dict'
 
 // const languages = ['en', 'zh'] as const
 export type LanguageCodes = 'en' | 'zh'
-export const [languageCode, setLanguageCode] = makePersisted(createSignal<LanguageCodes>('en'))
+export const [languageCode, setLanguageCode] = makePersisted(
+	createSignal<LanguageCodes>(navigator.language.includes('zh') ? 'zh' : 'en')
+)
 
 const dictionaries = {
 	en: enDict,
