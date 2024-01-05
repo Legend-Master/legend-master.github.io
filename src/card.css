@@ -28,8 +28,10 @@
 	}
 }
 
-.card:not(.open):hover .container-decor {
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+@media (hover: hover) {
+	.card:not(.open):hover .container-decor {
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	}
 }
 
 .card.open .container-decor {
@@ -78,7 +80,6 @@
 		transition: none;
 	}
 }
-
 
 .card.open .overlay {
 	opacity: 0.2;

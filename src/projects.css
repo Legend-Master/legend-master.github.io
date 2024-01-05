@@ -5,6 +5,18 @@
 	gap: 1em;
 }
 
+@media (width < 1000px) {
+	.projects .projects-container {
+		grid-template-columns: repeat(2, 300px);
+	}
+}
+
+@media (width < 700px) {
+	.projects .projects-container {
+		grid-template-columns: repeat(1, 300px);
+	}
+}
+
 .project {
 	/* overflow: hidden; */
 }
