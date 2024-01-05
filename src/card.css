@@ -1,95 +1,84 @@
 .card {
 	width: 100%;
 	height: 100%;
-    /* position: relative; */
+
+	--animation-duration: 0.5s;
 }
 
 .card:not(.open) {
 	cursor: pointer;
 }
 
+.card .container-decor {
+	width: var(--card-width);
+	height: var(--card-height);
+
+	overflow: hidden;
+
+	background-color: white;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+
+	transition: box-shadow var(--animation-duration), translate var(--animation-duration),
+		width var(--animation-duration), height var(--animation-duration);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.card .container-decor {
+		transition: none;
+	}
+}
+
+.card:not(.open):hover .container-decor {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.card.open .container-decor {
+	position: absolute;
+	translate: calc(50vw - 50% - var(--card-left)) calc(50vh - 50% - var(--card-top));
+
+	--container-width: min(90vw, 600px);
+	--container-height: 90vh;
+	width: var(--container-width);
+	height: var(--container-height);
+
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
 .card .container {
 	display: grid;
 	gap: 1em;
 
-	width: 100%;
-	height: 100%;
+	width: var(--card-width);
+	height: var(--card-height);
 
-	/* width: 300px; */
-	/* height: 200px; */
-
-	overflow: hidden;
 	padding: 2em;
-	background-color: white;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-
-	transition: box-shadow 0.3s, translate 0.3s;
 }
-
-.card:not(.open):hover .container {
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-}
-
-/* .card.transitioning .container { */
-/* position: fixed; */
-/* top: var(--original-top) !important; */
-/* left: var(--original-left) !important; */
-/* width: 300px !important; */
-/* height: 200px !important; */
-/* } */
 
 .card.open .container {
-	position: fixed;
-
-	/* top: 50%; */
-	/* left: 50%; */
-	/* translate: -50% -50%; */
-	/* top: 0; */
-	/* left: 0; */
-	translate: calc(50vw - 50% - var(--original-left)) calc(50vh - 50% - var(--original-top));
-
-	/* margin: auto; */
 	padding: 4em;
-	width: min(90vw, 600px);
-	height: 90vh;
+	width: var(--container-width);
+	height: var(--container-height);
 	overflow: auto;
 
-	/* box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); */
 	/* mask-image: linear-gradient(black calc(100% - 3rem), transparent); */
 }
 
-.card .fake-container {
-    position: absolute;
-	width: var(--original-width);
-	height: var(--original-height);
-
-	background-color: white;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-
-    pointer-events: none;
-
-	transition: box-shadow 0.3s, translate 0.3s, width 0.3s, height 0.3s;
-}
-
-.card.open .fake-container {
-	position: fixed;
-	translate: calc(50vw - 50% - var(--original-left)) calc(50vh - 50% - var(--original-top));
-
-	width: min(90vw, 600px);
-	height: 90vh;
-
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-}
-
-.overlay {
+.card .overlay {
 	position: fixed;
 	inset: 0;
 	opacity: 0;
 	background-color: black;
 	pointer-events: none;
 
-	transition: 0.3s;
+	transition: var(--animation-duration);
 }
+
+@media (prefers-reduced-motion: reduce) {
+	.card .overlay {
+		transition: none;
+	}
+}
+
 
 .card.open .overlay {
 	opacity: 0.2;
@@ -102,4 +91,21 @@
 
 .card:not(.open) .description {
 	overflow: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.card.open .description {
+		animation: fade-out var(--animation-duration);
+	}
+}
+
+@keyframes fade-out {
+	50% {
+		opacity: 0;
+		translate: 0px -1em;
+	}
+	51% {
+		opacity: 0;
+		translate: 0px 1em;
+	}
 }
