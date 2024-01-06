@@ -15,7 +15,7 @@ const contributions: Contributions = {
 }
 
 export const zhDict: { [T in keyof Dict]: string | Projects | Contributions } = {
-	mainDescription: '做和修能帮到人的软件',
+	mainDescription: '我做和修能帮到人的软件',
 	projectsTitle: '项目',
 	openSourceContributionsTitle: '开源项目贡献',
 	projects,

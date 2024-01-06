@@ -18,6 +18,7 @@
 @media (width < 800px) {
 	.projects .projects-container {
 		grid-template-columns: repeat(1, min(300px, 90vw));
+		grid-auto-rows: 250px;
 	}
 }
 

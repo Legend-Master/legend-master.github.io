@@ -4,4 +4,4 @@ And then I leaned more about software related things though Harvard CS50 and oth
 
 In the process, I tried to code/fix website, IDE plugin, VPN, browser, and a lot of hacking with browser extension/user scripts and game mods
 
-For programming languages, I'm pretty fluent in JavaScript/TypeScript, Python, Lua, experienced in Java, C#, C, C++, somewhat knowledged in Kotlin, Rust, Go and can pick up new ones within days (modern languages are pretty similar)
+For programming languages, I'm pretty fluent in JavaScript/TypeScript, Python, Lua, experienced in Java, C#, C, C++, Rust, somewhat knowledged in Kotlin, Go and can pick up new ones within days (modern languages are pretty similar)

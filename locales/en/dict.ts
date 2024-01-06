@@ -14,7 +14,7 @@ const contributions = {
 }
 
 export const enDict = {
-	mainDescription: 'Making and fixing software that helps people out',
+	mainDescription: 'I make and fix software that helps people out',
 	projectsTitle: 'Projects',
 	openSourceContributionsTitle: 'Open Source Contributions',
 	projects,

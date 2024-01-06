@@ -1,6 +1,6 @@
 .main-description {
-    display: grid;
-    gap: 2em;
+	display: grid;
+	gap: 2em;
 }
 
 .main-description > .i-m-tony {
@@ -10,8 +10,15 @@
 }
 
 .main-description > .card {
-	width: min(500px, 90vw);
-    height: 150px;
+	width: 500px;
+	height: 100px;
+}
+
+@media (width < 500px) {
+	.main-description > .card {
+		width: min(300px, 90vw);
+		height: 120px;
+	}
 }
 
 /* .main-description > .card .container {
@@ -19,5 +26,6 @@
 } */
 
 .main-description > .card:not(.open) .container {
-    text-align: center;
+	text-align: center;
+	gap: 0;
 }
