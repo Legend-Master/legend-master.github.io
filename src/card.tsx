@@ -60,28 +60,6 @@ export function Card(props: { description: string; title?: string; fullArticle: 
 		window.addEventListener('resize', updateCardRect)
 	})
 
-	// let [description, setDescription] = createSignal('')
-
-	// function updateDescription() {
-	// 	if (open()) {
-	// 		setDescription(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?
-	//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?`)
-	// 	} else {
-	// 		setDescription(
-	// 			`Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis voluptates quod esse veritatis est porro doloribus cumque voluptatum nostrum! Explicabo praesentium aspernatur recusandae molestiae harum sed consequatur quam ullam?`
-	// 		)
-	// 	}
-	// }
-	// updateDescription()
-
 	return (
 		<div
 			class="card"
@@ -118,10 +96,7 @@ export function Card(props: { description: string; title?: string; fullArticle: 
 						<div class="text">{props.title}</div>
 					</div>
 					<div class="description markdown-body">
-						{
-							// description()
-							open() ? props.fullArticle : props.description
-						}
+						{open() ? props.fullArticle : props.description}
 					</div>
 				</div>
 			</div>
