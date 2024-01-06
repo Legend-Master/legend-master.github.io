@@ -34,6 +34,7 @@ export function LanguageSelect() {
 	return (
 		<div>
 			<select
+				title="Language"
 				class="language-select"
 				onChange={(event) => {
 					setLanguageCode(languages[event.target.selectedIndex]!.code)
