@@ -1,0 +1,23 @@
+.main-description {
+    display: grid;
+    gap: 2em;
+}
+
+.main-description > .i-m-tony {
+	color: var(--on-surface-color);
+	text-align: center;
+	margin: 0;
+}
+
+.main-description > .card {
+	width: min(500px, 90vw);
+    height: 150px;
+}
+
+/* .main-description > .card .container {
+    padding: 1em;
+} */
+
+.main-description > .card:not(.open) .container {
+    text-align: center;
+}

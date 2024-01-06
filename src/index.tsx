@@ -1,5 +1,6 @@
 import { render } from 'solid-js/web'
 import { LanguageSelect } from './language-select'
+import { MainDescription } from './main-description'
 import { Contributions } from './contributions'
 import { Projects } from './projects'
 
@@ -14,7 +15,7 @@ render(
 				<LanguageSelect />
 			</header>
 			<main>
-				<h1 class='i-m-tony'>Hi, I'm Tony</h1>
+				<MainDescription />
 				<Projects />
 				<Contributions />
 			</main>

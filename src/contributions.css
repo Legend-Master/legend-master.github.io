@@ -1,8 +1,8 @@
-.projects h2 {
+.contributions h2 {
 	color: var(--on-surface-color);
 }
 
-.projects .projects-container {
+.contributions .contributions-container {
 	display: grid;
 	grid-template-columns: repeat(3, 350px);
 	grid-auto-rows: 200px;
@@ -10,17 +10,13 @@
 }
 
 @media (width < 1000px) {
-	.projects .projects-container {
+	.contributions .contributions-container {
 		grid-template-columns: repeat(2, 350px);
 	}
 }
 
 @media (width < 800px) {
-	.projects .projects-container {
+	.contributions .contributions-container {
 		grid-template-columns: repeat(1, min(300px, 90vw));
 	}
-}
-
-.project {
-	/* overflow: hidden; */
 }

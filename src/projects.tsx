@@ -1,15 +1,11 @@
 import { Card } from './card'
 import { languageCode, t } from './language-select'
 import { JSX } from 'solid-js/jsx-runtime'
-
-import './projects.css'
 import { createResource } from 'solid-js'
 
+import './projects.css'
+
 export function Projects() {
-	const [ChromiumAriticle] = createResource(
-		languageCode,
-		async (code) => (await import(`../locales/${code}/chromium.md`)).default
-	)
 	const [MailSyncFix] = createResource(
 		languageCode,
 		async (code) => (await import(`../locales/${code}/windows-mail-sync-fix.md`)).default
@@ -19,11 +15,6 @@ export function Projects() {
 		<div class="projects">
 			<h2>{t('projectsTitle')}</h2>
 			<div class="projects-container">
-				<Project
-					title={t('projects.chromium.title')}
-					description={t('projects.chromium.description')}
-					fullArticle={ChromiumAriticle()}
-				/>
 				<Project
 					title={t('projects.mailFix.title')}
 					description={t('projects.mailFix.description')}

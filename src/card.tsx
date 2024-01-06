@@ -3,7 +3,7 @@ import { createStore } from 'solid-js/store'
 
 import './card.css'
 
-export function Card(props: { description: string; title: string; fullArticle: JSX.Element }) {
+export function Card(props: { description: string; title?: string; fullArticle: JSX.Element }) {
 	let card: HTMLDivElement
 	let overlay: HTMLDivElement
 
