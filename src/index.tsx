@@ -6,8 +6,6 @@ import { Projects } from './projects'
 
 import './index.css'
 
-const root = document.getElementById('root')
-
 render(
 	() => (
 		<>
@@ -24,5 +22,5 @@ render(
 			</main>
 		</>
 	),
-	root!
+	document.getElementById('root')!
 )
