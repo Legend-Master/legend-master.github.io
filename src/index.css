@@ -4,24 +4,24 @@
 	line-height: 1.5;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 
-	--primary-color: #31628d;
-	--on-primary-color: #ffffff;
-	--secondary-color: #526070;
-	--on-secondary-color: #ffffff;
-	--surface-color: #f7f9ff;
-	--on-surface-color: #181c20;
-	--surface-container-color: #eceef4;
+	--primary-color: hsl(208, 48%, 37%);
+	--on-primary-color: hsl(0, 0%, 100%);
+	--secondary-color: hsl(212, 15%, 38%);
+	--on-secondary-color: hsl(0, 0%, 100%);
+	--surface-color: hsl(225, 100%, 98%);
+	--on-surface-color: hsl(210, 14%, 11%);
+	--surface-container-color: hsl(225, 27%, 94%);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--primary-color: #9dcbfb;
-		--on-primary-color: #003355;
-		--secondary-color: #b9c8da;
-		--on-secondary-color: #243240;
-		--surface-color: #36393e;
-		--on-surface-color: #e0e2e8;
-		--surface-container-color: #1d2024;
+		--primary-color: hsl(211, 92%, 80%);
+		--on-primary-color: hsl(204, 100%, 17%);
+		--secondary-color: hsl(213, 31%, 79%);
+		--on-secondary-color: hsl(210, 28%, 20%);
+		--surface-color: hsl(217, 7%, 23%);
+		--on-surface-color: hsl(225, 15%, 89%);
+		--surface-container-color: hsl(214, 11%, 13%);
 	}
 }
 
