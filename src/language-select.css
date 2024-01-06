@@ -1,11 +1,21 @@
 .language-select {
-    background-color: transparent;
-    border: none;
-    min-width: 0;
-    cursor: pointer;
+	background-color: transparent;
+	border: none;
+	min-width: 0;
+	cursor: pointer;
 
-    padding: 0.5em;
+	padding: 0.5em;
 
-    color: var(--on-primary-color);
-    background-color: var(--primary-color);
+	color: var(--on-primary-color);
+	background-color: var(--primary-color);
+}
+
+.language-select:focus-visible {
+	background-color: var(--primary-focus-color);
+}
+
+@media (hover: hover) {
+	.language-select:hover {
+		background-color: var(--primary-focus-color);
+	}
 }

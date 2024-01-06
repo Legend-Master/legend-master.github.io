@@ -13,6 +13,9 @@ render(
 		<>
 			<header>
 				<LanguageSelect />
+				<a href="https://github.com/Legend-Master">
+					<IconMdiGithub />
+				</a>
 			</header>
 			<main>
 				<MainDescription />
