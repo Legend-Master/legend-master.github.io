@@ -20,11 +20,31 @@ export function Projects() {
 					description={t('projects.mailFix.description')}
 					fullArticle={MailSyncFix()}
 				/>
-				{/* <Project /> */}
-				{/* <Project /> */}
-				{/* <Project /> */}
-				{/* <Project /> */}
-				{/* <Project /> */}
+				<Project
+					title={t('projects.simpleVpn.title')}
+					description={t('projects.simpleVpn.description')}
+					fullArticle={MailSyncFix()}
+				/>
+				<Project
+					title={t('projects.parcelPluginIconify.title')}
+					description={t('projects.parcelPluginIconify.description')}
+					fullArticle={MailSyncFix()}
+				/>
+				<Project
+					title={t('projects.dstMods.title')}
+					description={t('projects.dstMods.description')}
+					fullArticle={MailSyncFix()}
+				/>
+				<Project
+					title={t('projects.userScripts.title')}
+					description={t('projects.userScripts.description')}
+					fullArticle={MailSyncFix()}
+				/>
+				<Project
+					title={t('projects.manyMore.title')}
+					description={t('projects.manyMore.description')}
+					fullArticle={MailSyncFix()}
+				/>
 			</div>
 		</div>
 	)
