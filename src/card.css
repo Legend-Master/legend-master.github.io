@@ -47,7 +47,7 @@
 	translate: calc(50vw - 50% - var(--card-left)) calc(50vh - 50% - var(--card-top));
 
 	--container-width: min(90vw, 600px);
-	--container-height: 90vh;
+	--container-height: 85vh;
 	width: var(--container-width);
 	height: var(--container-height);
 
@@ -56,7 +56,7 @@
 
 @supports (height: 100dvh) {
 	.card.open .container-decor {
-		--container-height: 90dvh;
+		--container-height: 85dvh;
 	}
 }
 
@@ -71,12 +71,13 @@
 	color: var(--on-surface-color);
 
 	padding: 2em;
+	/* transition: padding var(--animation-duration); */
 }
 
 .card.open .container {
 	gap: 2em;
 
-	padding: 4em;
+	/* padding: 4em; */
 	width: var(--container-width);
 	height: var(--container-height);
 	overflow: auto;
