@@ -62,6 +62,7 @@
 
 .card .container {
 	display: grid;
+    grid-template-rows: min-content auto;
 	gap: 1em;
 
 	width: var(--card-width);
@@ -122,7 +123,7 @@
 	overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
 	.card.open .description {
 		animation: fade-out var(--animation-duration);
 	}
@@ -137,4 +138,4 @@
 		opacity: 0;
 		translate: 0px 1em;
 	}
-}
+} */

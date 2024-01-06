@@ -9,6 +9,8 @@
 		"serve": "vite preview"
 	},
 	"devDependencies": {
+		"@mdx-js/rollup": "^3.0.0",
+		"remark-gfm": "^4.0.0",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.10",
 		"vite-plugin-solid": "^2.8.0"
@@ -17,5 +19,6 @@
 		"@solid-primitives/i18n": "^2.0.0",
 		"@solid-primitives/storage": "^2.1.1",
 		"solid-js": "^1.8.8"
-	}
+	},
+	"type": "module"
 }

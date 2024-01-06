@@ -27,6 +27,7 @@
 		],
 		"types": [
 			"vite/client",
+			"mdx"
 		],
 	},
 }
