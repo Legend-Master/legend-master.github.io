@@ -62,13 +62,13 @@
 
 .card .container {
 	display: grid;
-    grid-template-rows: min-content auto;
+	grid-template-rows: min-content auto;
 	gap: 1em;
 
 	width: var(--card-width);
 	height: var(--card-height);
 
-    color: var(--on-surface-color);
+	color: var(--on-surface-color);
 
 	padding: 2em;
 }
@@ -117,6 +117,11 @@
 
 .card.open .title {
 	font-size: 1.4em;
+}
+
+.card .description {
+	color: var(--on-surface-color);
+	background-color: var(--surface-container-color);
 }
 
 .card:not(.open) .description {

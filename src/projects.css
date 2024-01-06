@@ -4,20 +4,20 @@
 
 .projects .projects-container {
 	display: grid;
-	grid-template-columns: repeat(3, 300px);
-	grid-template-rows: repeat(4, 200px);
+	grid-template-columns: repeat(3, 350px);
+	grid-template-rows: repeat(4, 250px);
 	gap: 1em;
 }
 
 @media (width < 1000px) {
 	.projects .projects-container {
-		grid-template-columns: repeat(2, 300px);
+		grid-template-columns: repeat(2, 350px);
 	}
 }
 
-@media (width < 700px) {
+@media (width < 800px) {
 	.projects .projects-container {
-		grid-template-columns: repeat(1, 300px);
+		grid-template-columns: repeat(1, min(300px, 90vw));
 	}
 }
 
