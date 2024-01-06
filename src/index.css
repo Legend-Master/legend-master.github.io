@@ -56,11 +56,17 @@ header {
 	display: flex;
 	justify-content: end;
 	align-items: center;
-	gap: 1em;
+	gap: 1.5em;
 
-	height: 4em;
 	background-color: var(--surface-container-color);
-	padding: 0 5em;
+	padding: 1em 5em;
+}
+
+@media (width < 500px) {
+	header {
+		gap: 1em;
+		padding: 1em 2em;
+	}
 }
 
 header > a {
