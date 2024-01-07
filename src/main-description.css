@@ -10,14 +10,14 @@
 }
 
 .main-description > .card {
-	width: 500px;
-	height: 100px;
+	width: 25em;
+	height: 6em;
 }
 
 @media (width < 500px) {
 	.main-description > .card {
-		width: min(300px, 90vw);
-		height: 120px;
+		width: min(20em, 90vw);
+		height: 7em;
 	}
 }
 
