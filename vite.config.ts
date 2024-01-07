@@ -26,7 +26,7 @@ export default defineConfig({
 				remarkPlugins: [remarkGfm],
 			}),
 		},
-		solidPlugin({ extensions: ['.md', '.mdx'] }),
+		solidPlugin({ extensions: ['.md', '.mdx'], hot: false }),
 	],
 	build: {
 		target: 'esnext',
