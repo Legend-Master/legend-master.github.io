@@ -9,8 +9,8 @@ const projects = {
 		description: 'A simple peer to peer VPN for gaming and speeding up WebRTC like applications',
 	},
 	parcelPluginIconify: {
-		title: 'Browser User Scripts',
-		description: 'A lot of browser user scripts that improves the web experience',
+		title: 'Parcel Plugin Iconify',
+		description: 'A Parcel plugin to add iconify icons',
 	},
 	dstMods: {
 		title: "Don't Starve Together Mods",
