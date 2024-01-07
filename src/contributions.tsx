@@ -45,11 +45,6 @@ export function Contributions() {
 					fullArticle={ChromiumAriticle()}
 					tags={['typescript', 'ide plugin']}
 				/>
-				{/* <Project /> */}
-				{/* <Project /> */}
-				{/* <Project /> */}
-				{/* <Project /> */}
-				{/* <Project /> */}
 			</div>
 		</div>
 	)
