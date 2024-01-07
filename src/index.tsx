@@ -11,11 +11,11 @@ render(
 		<>
 			<header>
 				<LanguageSelect />
-				<a href="mailto:legendmastertony@gmail.com" title="E-Mail me">
+				<a href="mailto:legendmastertony@gmail.com" title="E-Mail me" class="icon-link">
 					{/* Email me */}
 					<IconMdiEmail />
 				</a>
-				<a href="https://github.com/Legend-Master" title="My GitHub profile page">
+				<a href="https://github.com/Legend-Master" title="My GitHub profile page" class="icon-link">
 					{/* Find me on GitHub */}
 					<IconMdiGithub />
 				</a>
@@ -25,6 +25,16 @@ render(
 				<Projects />
 				<Contributions />
 			</main>
+			<footer>
+				<a
+					href="https://github.com/Legend-Master/legend-master.github.io"
+					title="Page source"
+					class="icon-link icon-text-link"
+				>
+					<span>View page source on GitHub</span>
+					<IconMdiGithub />
+				</a>
+			</footer>
 		</>
 	),
 	document.getElementById('root')!
