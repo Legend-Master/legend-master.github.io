@@ -1,6 +1,6 @@
 import { makePersisted } from '@solid-primitives/storage'
 import { translator, flatten } from '@solid-primitives/i18n'
-import { createEffect, createSignal } from 'solid-js'
+import { JSX, Resource, createEffect, createResource, createSignal } from 'solid-js'
 import { enDict } from '../locales/en/dict'
 import { zhDict } from '../locales/zh/dict'
 
@@ -17,6 +17,14 @@ const dictionaries = {
 	zh: zhDict,
 } as const
 export const t = translator(() => flatten(dictionaries[languageCode()]))
+
+export function translatedMarkdown(fileName: string) {
+	const [data] = createResource(
+		languageCode,
+		async (code) => (await import(`../locales/${code}/${fileName}.md`)).default
+	)
+	return data as Resource<JSX.Element>
+}
 
 export function LanguageSelect() {
 	createEffect(() => {

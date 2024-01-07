@@ -1,15 +1,12 @@
-import { JSX } from 'solid-js/jsx-runtime'
-import { createResource } from 'solid-js'
+import { JSX } from 'solid-js'
 import { Card } from './card'
-import { languageCode, t } from './language-select'
+import { t, translatedMarkdown } from './language-select'
 
 import './contributions.css'
 
 export function Contributions() {
-	const [ChromiumAriticle] = createResource(
-		languageCode,
-		async (code) => (await import(`../locales/${code}/chromium.md`)).default
-	)
+	const ChromiumAriticle = translatedMarkdown('chromium')
+
 	return (
 		<div class="contributions">
 			<h2>{t('openSourceContributionsTitle')}</h2>

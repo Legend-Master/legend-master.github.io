@@ -1,15 +1,13 @@
+import { JSX } from 'solid-js'
 import { Card } from './card'
-import { languageCode, t } from './language-select'
-import { JSX } from 'solid-js/jsx-runtime'
-import { createResource } from 'solid-js'
+import { translatedMarkdown, t } from './language-select'
 
 import './projects.css'
 
 export function Projects() {
-	const [MailSyncFix] = createResource(
-		languageCode,
-		async (code) => (await import(`../locales/${code}/windows-mail-sync-fix.md`)).default
-	)
+	const MailSyncFix = translatedMarkdown('windows-mail-sync-fix')
+	const SimpleVpn = translatedMarkdown('simple-vpn')
+	const ParcelPluginIconify = translatedMarkdown('parcel-plugin-iconify')
 
 	return (
 		<div class="projects">
@@ -23,12 +21,12 @@ export function Projects() {
 				<Project
 					title={t('projects.simpleVpn.title')}
 					description={t('projects.simpleVpn.description')}
-					fullArticle={MailSyncFix()}
+					fullArticle={SimpleVpn()}
 				/>
 				<Project
 					title={t('projects.parcelPluginIconify.title')}
 					description={t('projects.parcelPluginIconify.description')}
-					fullArticle={MailSyncFix()}
+					fullArticle={ParcelPluginIconify()}
 				/>
 				<Project
 					title={t('projects.dstMods.title')}
