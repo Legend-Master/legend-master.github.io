@@ -30,18 +30,17 @@ const projects: Projects = {
 const contributions: Contributions = {
 	chromium: {
 		title: 'Chromium',
-		description:
-			'The browser core behind Google Chrome, Microsoft Edge, Android Webview and many others',
+		description: 'Google Chrome, Microsoft Edge, Android Webview, 微信小程序 背后的浏览器内核',
 		contributions: [
-			'Fix screen capture returning smaller than screen size video stream on Windows and Linux',
-			'Fix fullscreen on Android pushes the entire pages down a bit',
-			'Fix wrong screen capture notification taskbar grouping on Windows',
+			'修复屏幕捕获在 Windows 和 Linux 上给的画面大小小于实际屏幕大小',
+			'修复在 Android 上全屏会把整个页面往下推一点',
+			'修复屏幕捕获在 Windows 上窗口任务栏上分组错误',
 		],
 	},
 	yamlLanguegeServer: {
 		title: 'Yaml Language Server',
-		description: 'The engine behined vscode yaml extension',
-		contributions: ['Add selection ranges support'],
+		description: '在 vscode yaml 扩展背后的引擎',
+		contributions: ['添加了选择范围支持'],
 	},
 }
 
