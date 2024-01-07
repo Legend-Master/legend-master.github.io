@@ -63,7 +63,7 @@
 
 .card .container {
 	display: grid;
-	grid-template-rows: min-content auto;
+	grid-template-rows: min-content auto min-content;
 	gap: 1em;
 
 	width: var(--card-width);
@@ -147,3 +147,16 @@
 		translate: 0px 1em;
 	}
 } */
+
+.card .tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.card .tag {
+	padding: 0.2em 1.2em;
+	border-radius: 1em;
+	color: var(--on-primary-color);
+	background-color: var(--primary-color);
+}

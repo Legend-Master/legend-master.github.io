@@ -17,26 +17,31 @@ export function Projects() {
 					title={t('projects.mailFix.title')}
 					description={t('projects.mailFix.description')}
 					fullArticle={MailSyncFix()}
+					tags={['c++', 'windows api']}
 				/>
 				<Project
 					title={t('projects.simpleVpn.title')}
 					description={t('projects.simpleVpn.description')}
 					fullArticle={SimpleVpn()}
+					tags={['rust', 'networking']}
 				/>
 				<Project
 					title={t('projects.parcelPluginIconify.title')}
 					description={t('projects.parcelPluginIconify.description')}
 					fullArticle={ParcelPluginIconify()}
+					tags={['typescript', 'module bundler']}
 				/>
 				<Project
 					title={t('projects.dstMods.title')}
 					description={t('projects.dstMods.description')}
 					fullArticle={MailSyncFix()}
+					tags={['lua', 'game mod']}
 				/>
 				<Project
 					title={t('projects.userScripts.title')}
 					description={t('projects.userScripts.description')}
 					fullArticle={MailSyncFix()}
+					tags={['javascript', 'browser extension']}
 				/>
 				<Project
 					title={t('projects.manyMore.title')}
@@ -48,7 +53,12 @@ export function Projects() {
 	)
 }
 
-export function Project(props: { description: string; title: string; fullArticle: JSX.Element }) {
+export function Project(props: {
+	description: string
+	title: string
+	fullArticle: JSX.Element
+	tags?: string[]
+}) {
 	return (
 		<div class="project">
 			<Card {...props} />

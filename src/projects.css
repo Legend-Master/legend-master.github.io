@@ -4,21 +4,29 @@
 
 .projects .projects-container {
 	display: grid;
-	grid-template-columns: repeat(3, 350px);
-	grid-auto-rows: 200px;
+	grid-template-columns: repeat(3, 380px);
+	grid-auto-rows: 15em;
 	gap: 1em;
+}
+
+@media (width < 1200px) {
+	.projects .projects-container {
+		grid-template-columns: repeat(3, 300px);
+		grid-auto-rows: 18em;
+	}
 }
 
 @media (width < 1000px) {
 	.projects .projects-container {
-		grid-template-columns: repeat(2, 350px);
+		grid-template-columns: repeat(2, 300px);
+		grid-auto-rows: 18em;
 	}
 }
 
-@media (width < 800px) {
+@media (width < 700px) {
 	.projects .projects-container {
 		grid-template-columns: repeat(1, min(300px, 90vw));
-		grid-auto-rows: 250px;
+		grid-auto-rows: 18em;
 	}
 }
 

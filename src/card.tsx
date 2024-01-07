@@ -1,9 +1,14 @@
-import { JSX, createSignal, onCleanup, onMount } from 'solid-js'
+import { JSX, Show, createSignal, onCleanup, onMount } from 'solid-js'
 import { createStore } from 'solid-js/store'
 
 import './card.css'
 
-export function Card(props: { description: string; title?: string; fullArticle: JSX.Element }) {
+export function Card(props: {
+	description: string
+	title?: string
+	fullArticle: JSX.Element
+	tags?: string[]
+}) {
 	let card: HTMLDivElement
 	let overlay: HTMLDivElement
 
@@ -98,6 +103,13 @@ export function Card(props: { description: string; title?: string; fullArticle: 
 					<div class="description markdown-body">
 						{open() ? props.fullArticle : props.description}
 					</div>
+					<Show when={!open()}>
+						<div class="tags">
+							{props.tags?.map((tag) => (
+								<div class="tag">{tag}</div>
+							))}
+						</div>
+					</Show>
 				</div>
 			</div>
 		</div>
