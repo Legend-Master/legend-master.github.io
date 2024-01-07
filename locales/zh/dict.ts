@@ -10,7 +10,7 @@ const projects: Projects = {
 		description: '一个用来打游戏和加速类 WebRTC 应用的简单 P2P VPN',
 	},
 	parcelPluginIconify: {
-		title: 'Browser User Scripts',
+		title: 'Parcel Plugin Iconify',
 		description: '一个用来给网站加入 Iconify 图标的 Parcel 插件',
 	},
 	dstMods: {
