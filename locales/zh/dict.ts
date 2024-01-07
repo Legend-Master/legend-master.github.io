@@ -7,23 +7,23 @@ const projects: Projects = {
 	},
 	simpleVpn: {
 		title: 'Simple P2P VPN',
-		description: 'A simple peer to peer VPN for gaming and speeding up WebRTC like applications',
+		description: '一个用来打游戏和加速类 WebRTC 应用的简单 P2P VPN',
 	},
 	parcelPluginIconify: {
 		title: 'Browser User Scripts',
-		description: 'A lot of browser user scripts that improves the web experience',
+		description: '一个用来给网站加入 Iconify 图标的 Parcel 插件',
 	},
 	dstMods: {
 		title: "Don't Starve Together Mods",
-		description: "A lot of mods for Don't Starve Together game",
+		description: '一大堆饥荒联机版的 Mod',
 	},
 	userScripts: {
 		title: 'Browser User Scripts',
-		description: 'A lot of browser user scripts that improves the web experience',
+		description: '一大堆提升上网冲浪体验的浏览器用户脚本',
 	},
 	manyMore: {
-		title: 'And Many More',
-		description: 'You can find them on Github and my Steam workshop page',
+		title: '还有更多！',
+		description: '你可以在 Github 和 我的 Steam 创意工坊看到更多我做东西',
 	},
 }
 
