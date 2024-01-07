@@ -29,7 +29,18 @@ const projects = {
 const contributions = {
 	chromium: {
 		title: 'Chromium',
-		description: 'chrome',
+		description:
+			'The browser core behind Google Chrome, Microsoft Edge, Android Webview and many others',
+		contributions: [
+			'Fix screen capture returning smaller than screen size video stream on Windows and Linux',
+			'Fix fullscreen on Android pushes the entire pages down a bit',
+			'Fix wrong screen capture notification taskbar grouping on Windows',
+		],
+	},
+	yamlLanguegeServer: {
+		title: 'Yaml Language Server',
+		description: 'The engine behined vscode yaml extension',
+		contributions: ['Add selection ranges support'],
 	},
 }
 
@@ -37,6 +48,7 @@ export const enDict = {
 	mainDescription: 'I make and fix software that helps people out',
 	projectsTitle: 'Projects',
 	openSourceContributionsTitle: 'Open Source Contributions',
+	whatIDid: 'What I did',
 	projects,
 	contributions,
 }

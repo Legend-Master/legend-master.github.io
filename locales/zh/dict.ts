@@ -30,7 +30,18 @@ const projects: Projects = {
 const contributions: Contributions = {
 	chromium: {
 		title: 'Chromium',
-		description: 'chrome',
+		description:
+			'The browser core behind Google Chrome, Microsoft Edge, Android Webview and many others',
+		contributions: [
+			'Fix screen capture returning smaller than screen size video stream on Windows and Linux',
+			'Fix fullscreen on Android pushes the entire pages down a bit',
+			'Fix wrong screen capture notification taskbar grouping on Windows',
+		],
+	},
+	yamlLanguegeServer: {
+		title: 'Yaml Language Server',
+		description: 'The engine behined vscode yaml extension',
+		contributions: ['Add selection ranges support'],
 	},
 }
 
@@ -38,6 +49,7 @@ export const zhDict: Dict = {
 	mainDescription: '我做和修能帮到人的软件',
 	projectsTitle: '项目',
 	openSourceContributionsTitle: '开源项目贡献',
+	whatIDid: '我做了',
 	projects,
 	contributions,
 }

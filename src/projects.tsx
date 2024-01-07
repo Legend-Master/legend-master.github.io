@@ -23,7 +23,7 @@ export function Projects() {
 					title={t('projects.simpleVpn.title')}
 					description={t('projects.simpleVpn.description')}
 					fullArticle={SimpleVpn()}
-					tags={['rust', 'networking']}
+					tags={['rust', 'networking', 'vpn']}
 				/>
 				<Project
 					title={t('projects.parcelPluginIconify.title')}

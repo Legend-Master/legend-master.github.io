@@ -4,20 +4,26 @@
 
 .contributions .contributions-container {
 	display: grid;
-	grid-template-columns: repeat(3, 350px);
-	grid-auto-rows: 200px;
-	gap: 1em;
+	grid-template-columns: repeat(2, 550px);
+	grid-auto-rows: 25em;
+	gap: 2em;
 }
 
-@media (width < 1000px) {
+@media (width < 1200px) {
 	.contributions .contributions-container {
-		grid-template-columns: repeat(2, 350px);
+		grid-template-columns: repeat(1, 600px);
+		gap: 1em;
 	}
 }
 
-@media (width < 800px) {
+@media (width < 700px) {
 	.contributions .contributions-container {
 		grid-template-columns: repeat(1, min(300px, 90vw));
-		grid-auto-rows: 250px;
+		grid-auto-rows: 40em;
 	}
+}
+
+.contribution .contribution-description {
+	display: grid;
+	gap: 1em;
 }

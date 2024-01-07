@@ -4,7 +4,7 @@ import { createStore } from 'solid-js/store'
 import './card.css'
 
 export function Card(props: {
-	description: string
+	description: string | JSX.Element
 	title?: string
 	fullArticle: JSX.Element
 	tags?: string[]
