@@ -45,7 +45,6 @@
 .card.open .container-decor {
 	position: absolute;
 	translate: calc(50vw - 50% - var(--card-left)) calc(50vh - 50% - var(--card-top));
-	translate: calc(50dvw - 50% - var(--card-left)) calc(50dvh - 50% - var(--card-top));
 
 	--container-width: min(90vw, 600px);
 	--container-height: 85vh;
@@ -57,6 +56,7 @@
 
 @supports (height: 100dvh) {
 	.card.open .container-decor {
+		translate: calc(50dvw - 50% - var(--card-left)) calc(50dvh - 50% - var(--card-top));
 		--container-height: 85dvh;
 	}
 }
