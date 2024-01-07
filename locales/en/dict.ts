@@ -39,7 +39,7 @@ export const enDict = {
 	openSourceContributionsTitle: 'Open Source Contributions',
 	projects,
 	contributions,
-} as const
+}
 
 export type Dict = typeof enDict
 export type Projects = typeof projects

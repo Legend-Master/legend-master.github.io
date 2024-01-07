@@ -1,5 +1,5 @@
 import { makePersisted } from '@solid-primitives/storage'
-import { translator, flatten, Flatten } from '@solid-primitives/i18n'
+import { translator, flatten } from '@solid-primitives/i18n'
 import { createEffect, createSignal } from 'solid-js'
 import { enDict } from '../locales/en/dict'
 import { zhDict } from '../locales/zh/dict'
@@ -12,14 +12,11 @@ export const [languageCode, setLanguageCode] = makePersisted(
 	createSignal<LanguageCodes>(navigator.language.includes('zh') ? 'zh' : 'en')
 )
 
-type RawDictionary = typeof enDict
 const dictionaries = {
 	en: enDict,
 	zh: zhDict,
 } as const
-export const t = translator<Flatten<RawDictionary>>(() =>
-	flatten(dictionaries[languageCode()] as RawDictionary)
-)
+export const t = translator(() => flatten(dictionaries[languageCode()]))
 
 export function LanguageSelect() {
 	createEffect(() => {
