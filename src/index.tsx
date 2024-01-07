@@ -11,7 +11,12 @@ render(
 		<>
 			<header>
 				<LanguageSelect />
-				<a href="https://github.com/Legend-Master">
+				<a href="mailto:legendmastertony@gmail.com" title="E-Mail me">
+					{/* Email me */}
+					<IconMdiEmail />
+				</a>
+				<a href="https://github.com/Legend-Master" title="My GitHub profile page">
+					{/* Find me on GitHub */}
 					<IconMdiGithub />
 				</a>
 			</header>

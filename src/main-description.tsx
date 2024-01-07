@@ -12,7 +12,11 @@ export function MainDescription() {
 	return (
 		<div class="main-description">
 			<h1 class="i-m-tony">Hi, I'm Tony</h1>
-			<Card description={t('mainDescription')} fullArticle={MainDescription()} />
+			<Card
+				// title={`Hi, I'm Tony`}
+				description={t('mainDescription')}
+				fullArticle={MainDescription()}
+			/>
 		</div>
 	)
 }
