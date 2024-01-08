@@ -125,6 +125,7 @@
 .card .description {
 	color: var(--on-surface-color);
 	background-color: var(--surface-container-color);
+	overflow-wrap: anywhere;
 }
 
 .card:not(.open) .description {
