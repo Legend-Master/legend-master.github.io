@@ -20,7 +20,10 @@
 					"endsPattern": "."
 				}
 			},
-			"isBackground": true
+			"isBackground": true,
+			"presentation": {
+				"reveal": "silent"
+			}
 		}
 	]
 }
