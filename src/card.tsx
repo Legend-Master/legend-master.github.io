@@ -74,10 +74,12 @@ export function Card(props: {
 		window.removeEventListener('popstate', handlePopState)
 	})
 
-	createEffect((prev) => {
+	let firstRun = true
+	createEffect(() => {
 		const isOpen = open()
-		if (prev === undefined) {
-			return true
+		if (firstRun) {
+			firstRun = false
+			return
 		}
 		if (isOpen) {
 			history.pushState(null, '')
