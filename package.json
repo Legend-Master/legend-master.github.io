@@ -8,6 +8,7 @@
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.64",
 		"@mdx-js/rollup": "^3.0.0",
+		"postcss-media-minmax": "^5.0.0",
 		"remark-gfm": "^4.0.0",
 		"typescript": "^5.3.3",
 		"unplugin-auto-import": "^0.17.3",

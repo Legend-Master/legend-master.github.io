@@ -5,6 +5,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import mdx from '@mdx-js/rollup'
 import remarkGfm from 'remark-gfm'
 import solidPlugin from 'vite-plugin-solid'
+// @ts-ignore
+import minMax from 'postcss-media-minmax'
 
 export default defineConfig({
 	plugins: [
@@ -28,6 +30,11 @@ export default defineConfig({
 		},
 		solidPlugin({ extensions: ['.md', '.mdx'], hot: false }),
 	],
+	css: {
+		postcss: {
+			plugins: [minMax()],
+		},
+	},
 	build: {
 		target: 'esnext',
 	},
