@@ -45,7 +45,18 @@ export function Card(props: {
 		}
 	}
 
-	function changeOpen(state: boolean) {
+	function updateHistory(state: boolean) {
+		if (state) {
+			history.pushState(null, '')
+		} else {
+			history.back()
+		}
+	}
+
+	function changeOpen(state: boolean, noHistoryUpdate = false) {
+		if (!noHistoryUpdate && state !== open()) {
+			updateHistory(state)
+		}
 		updateCardRect()
 		enableBodyScrolling(!state)
 		setOpen(state)
@@ -59,7 +70,7 @@ export function Card(props: {
 
 	function handlePopState(event: PopStateEvent) {
 		if (open()) {
-			changeOpen(false)
+			changeOpen(false, true)
 		}
 	}
 
@@ -72,20 +83,6 @@ export function Card(props: {
 		window.removeEventListener('keydown', closeOnEsc)
 		window.removeEventListener('resize', updateCardRect)
 		window.removeEventListener('popstate', handlePopState)
-	})
-
-	let firstRun = true
-	createEffect(() => {
-		const isOpen = open()
-		if (firstRun) {
-			firstRun = false
-			return
-		}
-		if (isOpen) {
-			history.pushState(null, '')
-		} else {
-			history.back()
-		}
 	})
 
 	return (
