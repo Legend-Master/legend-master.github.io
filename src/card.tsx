@@ -79,7 +79,7 @@ export function Card(props: {
 				}
 			}}
 			onKeyDown={(ev) => {
-				if (ev.key === ' ') {
+				if (ev.key === ' ' || ev.key === 'Enter') {
 					changeOpen(!open())
 					ev.preventDefault()
 				}
