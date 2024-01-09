@@ -25,7 +25,8 @@
 	background-color: var(--surface-container-color);
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 
-	transition: box-shadow 0.2s, translate var(--animation-duration), width var(--animation-duration),
+	transition: box-shadow 0.2s, transform var(--animation-duration),
+		translate var(--animation-duration), width var(--animation-duration),
 		height var(--animation-duration);
 }
 
@@ -51,7 +52,8 @@
 
 .card.open .container-decor {
 	position: absolute;
-	translate: calc(50vw - 50% - var(--card-left)) calc(50vh - 50% - var(--card-top));
+	/* translate: calc(50vw - 50% - var(--card-left)) calc(50vh - 50% - var(--card-top)); */
+	transform: translate(calc(50vw - 50% - var(--card-left)), calc(50vh - 50% - var(--card-top)));
 
 	--container-width: min(90vw, 600px);
 	--container-height: 85vh;
