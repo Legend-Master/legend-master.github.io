@@ -1,4 +1,4 @@
-import { JSX, Show, createSignal, onCleanup, onMount } from 'solid-js'
+import { JSX, Show, createEffect, createSignal, onCleanup, onMount } from 'solid-js'
 import { createStore } from 'solid-js/store'
 
 import './card.css'
@@ -56,13 +56,34 @@ export function Card(props: {
 			changeOpen(false)
 		}
 	}
+
+	function handlePopState(event: PopStateEvent) {
+		if (open()) {
+			changeOpen(false)
+		}
+	}
+
 	onMount(() => {
 		window.addEventListener('keydown', closeOnEsc)
 		window.addEventListener('resize', updateCardRect)
+		window.addEventListener('popstate', handlePopState)
 	})
 	onCleanup(() => {
 		window.removeEventListener('keydown', closeOnEsc)
-		window.addEventListener('resize', updateCardRect)
+		window.removeEventListener('resize', updateCardRect)
+		window.removeEventListener('popstate', handlePopState)
+	})
+
+	createEffect((prev) => {
+		const isOpen = open()
+		if (prev === undefined) {
+			return true
+		}
+		if (isOpen) {
+			history.pushState(null, '')
+		} else {
+			history.back()
+		}
 	})
 
 	return (
