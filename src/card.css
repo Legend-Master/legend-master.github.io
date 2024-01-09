@@ -52,7 +52,6 @@
 
 .card.open .container-decor {
 	position: absolute;
-	/* translate: calc(50vw - 50% - var(--card-left)) calc(50vh - 50% - var(--card-top)); */
 	transform: translate(calc(50vw - 50% - var(--card-left)), calc(50vh - 50% - var(--card-top)));
 
 	--container-width: min(90vw, 600px);
@@ -61,6 +60,13 @@
 	height: var(--container-height);
 
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+@supports (translate: 1px 1px) {
+	.card.open .container-decor {
+		translate: calc(50vw - 50% - var(--card-left)) calc(50vh - 50% - var(--card-top));
+		transform: none;
+	}
 }
 
 @supports (height: 100dvh) {
