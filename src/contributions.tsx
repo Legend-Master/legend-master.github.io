@@ -22,6 +22,7 @@ function makdeDescription(description: string, contributions: string[]) {
 
 export function Contributions() {
 	const ChromiumAriticle = translatedMarkdown('chromium')
+	const YamlLanguageServer = translatedMarkdown('yaml-language-server')
 
 	return (
 		<div class="contributions">
@@ -42,7 +43,7 @@ export function Contributions() {
 						t('contributions.yamlLanguegeServer.description'),
 						t('contributions.yamlLanguegeServer.contributions')
 					)}
-					fullArticle={ChromiumAriticle()}
+					fullArticle={YamlLanguageServer()}
 					tags={['typescript', 'ide plugin']}
 				/>
 			</div>

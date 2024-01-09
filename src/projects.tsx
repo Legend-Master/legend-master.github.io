@@ -8,6 +8,9 @@ export function Projects() {
 	const MailSyncFix = translatedMarkdown('windows-mail-sync-fix')
 	const SimpleVpn = translatedMarkdown('simple-vpn')
 	const ParcelPluginIconify = translatedMarkdown('parcel-plugin-iconify')
+	const DstMods = translatedMarkdown('dst-mods')
+	const UserScripts = translatedMarkdown('user-scripts')
+	const ManyMore = translatedMarkdown('many-more-projects')
 
 	return (
 		<div class="projects">
@@ -34,19 +37,19 @@ export function Projects() {
 				<Project
 					title={t('projects.dstMods.title')}
 					description={t('projects.dstMods.description')}
-					fullArticle={MailSyncFix()}
+					fullArticle={DstMods()}
 					tags={['lua', 'game mod']}
 				/>
 				<Project
 					title={t('projects.userScripts.title')}
 					description={t('projects.userScripts.description')}
-					fullArticle={MailSyncFix()}
+					fullArticle={UserScripts()}
 					tags={['javascript', 'browser extension']}
 				/>
 				<Project
 					title={t('projects.manyMore.title')}
 					description={t('projects.manyMore.description')}
-					fullArticle={MailSyncFix()}
+					fullArticle={ManyMore()}
 				/>
 			</div>
 		</div>
