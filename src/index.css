@@ -85,6 +85,10 @@ header {
 	color: var(--primary-focus-color);
 }
 
+header .language-select {
+	margin: 0 0.2em;
+}
+
 @media (hover: hover) {
 	.icon-link:hover {
 		color: var(--primary-focus-color);
