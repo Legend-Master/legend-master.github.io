@@ -12,7 +12,7 @@
 		"remark-gfm": "^4.0.0",
 		"typescript": "^5.3.3",
 		"unplugin-auto-import": "^0.17.3",
-		"unplugin-icons": "^0.18.1",
+		"unplugin-icons": "^0.18.2",
 		"vite": "^5.0.11",
 		"vite-plugin-solid": "^2.8.0"
 	},
@@ -20,7 +20,7 @@
 		"@solid-primitives/i18n": "^2.0.0",
 		"@solid-primitives/storage": "^2.1.1",
 		"github-markdown-css": "^5.5.0",
-		"solid-js": "^1.8.8"
+		"solid-js": "^1.8.10"
 	},
 	"type": "module"
 }
