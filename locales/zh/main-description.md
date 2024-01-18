@@ -1,7 +1,7 @@
-I started up programming a lot by making mods for a game called Don't Starve Together at first and later on shared some of them on GitHub as open source projects
+我开始做有用的程序是从给一个叫 饥荒联机版 的游戏做 mod 开始的，后面我在 GitHub 上开源了其中的一部分
 
-And then I leaned more about software related things though Harvard CS50 and other online resources along with reading and even started writing code for some bigger open source softwares as well as some personal projects
+后面我从像 哈佛 CS50 这样的的在线资源里学了更多软件相关的东西，同时开始给大型的开源项目和一些自己的项目写代码
 
-In the process, I tried to code/fix website, IDE plugin, VPN, browser, and a lot of hacking with browser extension/user scripts and game mods
+在这个过程里，我做和修了 网站，集成开发环境插件，VPN，浏览器，还有很多的浏览器插件/用户脚本和游戏模组
 
-For programming languages, I'm pretty fluent in JavaScript/TypeScript, Python, Lua, experienced in Java, C#, C, C++, Rust, somewhat knowledged in Kotlin, Go and can pick up new ones within days (modern languages are pretty similar)
+编程语言上，我在 JavaScript/TypeScript, Python, Lua 上很熟悉，对 Java, C#, C, C++, Rust 有经验，知道一些 Kotlin, Go，并且可以在几天内学会一个新的语言（现代语言都很像）
