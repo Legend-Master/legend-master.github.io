@@ -113,6 +113,12 @@ footer {
 	padding: 1.5em 3em;
 }
 
+@media (width < 500px) {
+	footer {
+		padding: 1em 2em;
+	}
+}
+
 .icon-text-link span {
 	font-size: 0.8em;
 }
