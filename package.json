@@ -13,8 +13,8 @@
 		"typescript": "^5.3.3",
 		"unplugin-auto-import": "^0.17.3",
 		"unplugin-icons": "^0.18.2",
-		"vite": "^5.0.11",
-		"vite-plugin-solid": "^2.8.1"
+		"vite": "^5.0.12",
+		"vite-plugin-solid": "^2.8.2"
 	},
 	"dependencies": {
 		"@solid-primitives/i18n": "^2.0.1",
