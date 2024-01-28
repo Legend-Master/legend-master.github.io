@@ -22,8 +22,8 @@ render(
 			</header>
 			<main>
 				<MainDescription />
-				<Projects />
 				<Contributions />
+				<Projects />
 			</main>
 			<footer>
 				<a
