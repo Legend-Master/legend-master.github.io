@@ -16,8 +16,8 @@
 				],
 				"background": {
 					"activeOnStart": true,
-					"beginsPattern": "Server running at .*",
-					"endsPattern": "."
+					"beginsPattern": "dev",
+					"endsPattern": ".* ready in .*"
 				}
 			},
 			"isBackground": true,
