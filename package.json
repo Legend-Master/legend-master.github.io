@@ -6,19 +6,19 @@
 		"serve": "vite preview"
 	},
 	"devDependencies": {
-		"@iconify-json/mdi": "^1.1.64",
+		"@iconify-json/mdi": "^1.1.66",
 		"@mdx-js/rollup": "^3.0.1",
 		"postcss-media-minmax": "^5.0.0",
 		"remark-gfm": "^4.0.0",
-		"typescript": "^5.4.3",
+		"typescript": "^5.4.5",
 		"unplugin-auto-import": "^0.17.5",
 		"unplugin-icons": "^0.18.5",
-		"vite": "^5.2.6",
+		"vite": "^5.2.9",
 		"vite-plugin-solid": "^2.10.2"
 	},
 	"dependencies": {
 		"@solid-primitives/i18n": "^2.1.1",
-		"@solid-primitives/storage": "^3.0.0",
+		"@solid-primitives/storage": "^3.3.0",
 		"github-markdown-css": "^5.5.1",
 		"solid-js": "^1.8.16"
 	},
