@@ -22,7 +22,8 @@ function makdeDescription(description: string, contributions: string[]) {
 
 export function Contributions() {
 	const ChromiumAriticle = translatedMarkdown('chromium')
-	const YamlLanguageServer = translatedMarkdown('yaml-language-server')
+	// const YamlLanguageServer = translatedMarkdown('yaml-language-server')
+	const TauriLanguageServer = translatedMarkdown('tauri')
 
 	return (
 		<div class="contributions">
@@ -37,7 +38,7 @@ export function Contributions() {
 					fullArticle={ChromiumAriticle()}
 					tags={['c++', 'java', 'windows api', 'android api']}
 				/>
-				<Contribution
+				{/* <Contribution
 					title={t('contributions.yamlLanguegeServer.title')}
 					description={makdeDescription(
 						t('contributions.yamlLanguegeServer.description'),
@@ -45,6 +46,15 @@ export function Contributions() {
 					)}
 					fullArticle={YamlLanguageServer()}
 					tags={['typescript', 'ide plugin']}
+				/> */}
+				<Contribution
+					title={t('contributions.tauri.title')}
+					description={makdeDescription(
+						t('contributions.tauri.description'),
+						t('contributions.tauri.contributions')
+					)}
+					fullArticle={TauriLanguageServer()}
+					tags={['rust', 'typescript', 'windows api']}
 				/>
 			</div>
 		</div>

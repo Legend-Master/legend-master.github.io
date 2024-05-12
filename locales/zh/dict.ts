@@ -37,10 +37,15 @@ const contributions: Contributions = {
 			'修复屏幕捕获在 Windows 上窗口任务栏上分组错误',
 		],
 	},
-	yamlLanguegeServer: {
-		title: 'Yaml Language Server',
-		description: '在 vscode yaml 扩展背后的引擎',
-		contributions: ['添加了选择范围支持'],
+	// yamlLanguegeServer: {
+	// 	title: 'Yaml Language Server',
+	// 	description: '在 vscode yaml 扩展背后的引擎',
+	// 	contributions: ['添加了选择范围支持'],
+	// },
+	tauri: {
+		title: 'Tauri',
+		description: '一个用 web 技术来制作跨平台应用的框架',
+		contributions: ['修复了在不同组件里各种各样 bug', '制作了新的功能也改进了旧的', '影响设计决策'],
 	},
 }
 

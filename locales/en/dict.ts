@@ -37,10 +37,19 @@ const contributions = {
 			'Fix wrong screen capture notification taskbar grouping on Windows',
 		],
 	},
-	yamlLanguegeServer: {
-		title: 'Yaml Language Server',
-		description: 'The engine behined vscode yaml extension',
-		contributions: ['Add selection ranges support'],
+	// yamlLanguegeServer: {
+	// 	title: 'Yaml Language Server',
+	// 	description: 'The engine behined vscode yaml extension',
+	// 	contributions: ['Add selection ranges support'],
+	// },
+	tauri: {
+		title: 'Tauri',
+		description: 'A framework for building cross platform applications using web technology',
+		contributions: [
+			'Fix various bugs in a lot of different components',
+			'Introduce new features and enhance existing ones',
+			'Influence design decisions',
+		],
 	},
 }
 
