@@ -1,3 +1,5 @@
+Core member since July 2024
+
 I fixed various bugs and introduced new features in all sorts of different fields like windowing, updater/installer, system tray, and also did lots of other engineering and bug tracking
 
 Here're some of the changes I made:
