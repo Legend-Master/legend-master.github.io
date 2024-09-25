@@ -10,17 +10,17 @@
 		"@mdx-js/rollup": "^3.0.1",
 		"postcss-media-minmax": "^5.0.0",
 		"remark-gfm": "^4.0.0",
-		"typescript": "^5.5.4",
-		"unplugin-auto-import": "^0.18.2",
+		"typescript": "^5.6.2",
+		"unplugin-auto-import": "^0.18.3",
 		"unplugin-icons": "^0.19.3",
-		"vite": "^5.4.3",
+		"vite": "^5.4.8",
 		"vite-plugin-solid": "^2.10.2"
 	},
 	"dependencies": {
 		"@solid-primitives/i18n": "^2.1.1",
 		"@solid-primitives/storage": "^4.2.1",
 		"github-markdown-css": "^5.6.1",
-		"solid-js": "^1.8.22"
+		"solid-js": "^1.9.1"
 	},
 	"type": "module"
 }
