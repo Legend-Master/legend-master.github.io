@@ -19,7 +19,7 @@
 @media (width < 700px) {
 	.contributions .contributions-container {
 		grid-template-columns: repeat(1, min(400px, 90vw));
-		grid-auto-rows: 40em;
+		grid-auto-rows: 35em;
 	}
 }
 
