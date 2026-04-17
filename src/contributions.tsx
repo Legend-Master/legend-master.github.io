@@ -33,7 +33,7 @@ export function Contributions() {
 					title={t('contributions.chromium.title')}
 					description={makdeDescription(
 						t('contributions.chromium.description'),
-						t('contributions.chromium.contributions')
+						t('contributions.chromium.contributions'),
 					)}
 					fullArticle={ChromiumAriticle()}
 					tags={['c++', 'java', 'windows api', 'android api']}
@@ -51,7 +51,7 @@ export function Contributions() {
 					title={t('contributions.tauri.title')}
 					description={makdeDescription(
 						t('contributions.tauri.description'),
-						t('contributions.tauri.contributions')
+						t('contributions.tauri.contributions'),
 					)}
 					fullArticle={TauriLanguageServer()}
 					tags={['rust', 'typescript', 'windows api']}

@@ -37,5 +37,5 @@ render(
 			</footer>
 		</>
 	),
-	document.getElementById('root')!
+	document.getElementById('root')!,
 )

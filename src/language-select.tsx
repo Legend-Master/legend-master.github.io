@@ -9,7 +9,7 @@ import './language-select.css'
 // const languages = ['en', 'zh'] as const
 export type LanguageCodes = 'en' | 'zh'
 export const [languageCode, setLanguageCode] = makePersisted(
-	createSignal<LanguageCodes>(navigator.language.includes('zh') ? 'zh' : 'en')
+	createSignal<LanguageCodes>(navigator.language.includes('zh') ? 'zh' : 'en'),
 )
 
 const dictionaries = {
@@ -21,7 +21,7 @@ export const t = translator(() => flatten(dictionaries[languageCode()]))
 export function translatedMarkdown(fileName: string) {
 	const [data] = createResource(
 		languageCode,
-		async (code) => (await import(`../locales/${code}/${fileName}.md`)).default
+		async (code) => (await import(`../locales/${code}/${fileName}.md`)).default,
 	)
 	return data as Resource<JSX.Element>
 }
