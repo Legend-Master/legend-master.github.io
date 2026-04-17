@@ -5,7 +5,7 @@ import { translatedMarkdown, t } from './language-select'
 import './projects.css'
 
 export function Projects() {
-	const MailSyncFix = translatedMarkdown('windows-mail-sync-fix')
+	const OrangeLan = translatedMarkdown('orange-lan')
 	const SimpleVpn = translatedMarkdown('simple-vpn')
 	const ParcelPluginIconify = translatedMarkdown('parcel-plugin-iconify')
 	const DstMods = translatedMarkdown('dst-mods')
@@ -17,10 +17,10 @@ export function Projects() {
 			<h2>{t('projectsTitle')}</h2>
 			<div class="projects-container">
 				<Project
-					title={t('projects.mailFix.title')}
-					description={t('projects.mailFix.description')}
-					fullArticle={MailSyncFix()}
-					tags={['c++', 'windows api']}
+					title={t('projects.orangeLan.title')}
+					description={t('projects.orangeLan.description')}
+					fullArticle={OrangeLan()}
+					tags={['rust', 'tauri', 'ux']}
 				/>
 				<Project
 					title={t('projects.simpleVpn.title')}

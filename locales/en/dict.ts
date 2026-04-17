@@ -1,8 +1,12 @@
 const projects = {
-	mailFix: {
-		title: 'Windows Mail Auto Sync Fix',
-		description:
-			"A small program that fixes Windows Mail app doesn't sync Gmail automatically in background",
+	// mailFix: {
+	// 	title: 'Windows Mail Auto Sync Fix',
+	// 	description:
+	// 		"A small program that fixes Windows Mail app doesn't sync Gmail automatically in background",
+	// },
+	orangeLan: {
+		title: 'Orange LAN',
+		description: 'A SaaS built on top of Simple P2P VPN for LAN gaming',
 	},
 	simpleVpn: {
 		title: 'Simple P2P VPN',

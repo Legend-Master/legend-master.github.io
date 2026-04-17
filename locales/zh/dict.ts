@@ -1,9 +1,13 @@
 import { Dict, Projects, Contributions } from '../en/dict'
 
 const projects: Projects = {
-	mailFix: {
-		title: 'Windows Mail Auto Sync Fix',
-		description: '一个可以修复 Windows 邮件应用在后台自动同步 Gmail 的程序',
+	// mailFix: {
+	// 	title: 'Windows Mail Auto Sync Fix',
+	// 	description: '一个可以修复 Windows 邮件应用在后台自动同步 Gmail 的程序',
+	// },
+	orangeLan: {
+		title: 'Orange LAN',
+		description: '在 Simple P2P VPN 基础上制作的用于加速局域网联机游戏的软件即服务',
 	},
 	simpleVpn: {
 		title: 'Simple P2P VPN',
