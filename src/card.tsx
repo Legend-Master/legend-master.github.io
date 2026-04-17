@@ -9,8 +9,8 @@ export function Card(props: {
 	fullArticle: JSX.Element
 	tags?: string[]
 }) {
-	let card: HTMLDivElement
-	let overlay: HTMLDivElement
+	let card!: HTMLDivElement
+	let overlay!: HTMLDivElement
 
 	const [open, setOpen] = createSignal(false)
 	const [cardRect, setCardRect] = createStore({
@@ -111,9 +111,9 @@ export function Card(props: {
 				'--card-width': cardRect.width,
 				'--card-height': cardRect.height,
 			}}
-			ref={card!}
+			ref={card}
 		>
-			<div class="overlay" ref={overlay!}></div>
+			<div class="overlay" ref={overlay}></div>
 			<div class="container-decor">
 				<div class="container">
 					<div class="title">

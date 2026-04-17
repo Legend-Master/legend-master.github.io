@@ -6,21 +6,21 @@
 		"serve": "vite preview"
 	},
 	"devDependencies": {
-		"@iconify-json/mdi": "^1.2.0",
-		"@mdx-js/rollup": "^3.0.1",
+		"@iconify-json/mdi": "^1.2.3",
+		"@mdx-js/rollup": "^3.1.1",
 		"postcss-media-minmax": "^5.0.0",
-		"remark-gfm": "^4.0.0",
-		"typescript": "^5.6.2",
-		"unplugin-auto-import": "^0.18.3",
-		"unplugin-icons": "^0.19.3",
-		"vite": "^5.4.8",
-		"vite-plugin-solid": "^2.10.2"
+		"remark-gfm": "^4.0.1",
+		"typescript": "^6.0.3",
+		"unplugin-auto-import": "^21.0.0",
+		"unplugin-icons": "^23.0.1",
+		"vite": "^8.0.8",
+		"vite-plugin-solid": "^2.11.12"
 	},
 	"dependencies": {
-		"@solid-primitives/i18n": "^2.1.1",
-		"@solid-primitives/storage": "^4.2.1",
-		"github-markdown-css": "^5.6.1",
-		"solid-js": "^1.9.1"
+		"@solid-primitives/i18n": "^2.2.1",
+		"@solid-primitives/storage": "^4.3.4",
+		"github-markdown-css": "^5.9.0",
+		"solid-js": "^1.9.12"
 	},
 	"type": "module"
 }

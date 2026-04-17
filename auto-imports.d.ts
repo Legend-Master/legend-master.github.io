@@ -6,6 +6,6 @@
 // biome-ignore lint: disable
 export {}
 declare global {
-  const IconMdiEmail: typeof import('~icons/mdi/email.jsx')['default']
-  const IconMdiGithub: typeof import('~icons/mdi/github.jsx')['default']
+  const IconMdiEmail: typeof import('~icons/mdi/email.jsx').default
+  const IconMdiGithub: typeof import('~icons/mdi/github.jsx').default
 }
